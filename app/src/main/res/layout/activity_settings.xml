@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="UseSwitchCompatOrMaterialXml"
+    android:id ="@+id/settings"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="@dimen/zero"
+    android:background="@color/adaptiveBackGroundWhite"
+    >
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarSettings"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:navigationIcon="@drawable/ic_arrow_24"
+        app:titleTextAppearance="@style/headerText"
+        app:title="@string/options"
+        />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/darkTheme"
+        style="@style/settingsText"
+        android:layout_marginTop="@dimen/marginTopOptions"
+        android:text="@string/dark_theme"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/share"
+        style="@style/settingsText"
+        android:layout_marginTop="141dp"
+        android:text="@string/share_app"
+        android:drawableEnd="@drawable/ic_share_24"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/support"
+        style="@style/settingsText"
+        android:layout_marginTop="202dp"
+        android:text="@string/support"
+        android:drawableEnd="@drawable/ic_support_24"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/usersAgree"
+        style="@style/settingsText"
+        android:layout_marginTop="263dp"
+        android:text="@string/users_pact"
+        android:drawableEnd="@drawable/ic_arrowright_8"/>
+
+
+
+
+
+</FrameLayout>
